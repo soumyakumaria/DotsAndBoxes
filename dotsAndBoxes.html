@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dots And Boxes</title>
+        <link rel="stylesheet" href="dotsAndBoxes.css">
+    </head>
+    <body>
+    <div class ="Score" id="Score1">
+        <h3>Player 1 Red Score: <span id="result1"> 0</span></h3>
+        <h3>Player 2 Green Score: <span id="result2"> 0</span></h3>
+        <h3>Player 3 Blue Score: <span id="result3"> 0</span></h3>
+    </div>
+
+    <div class = "board" id ="board">
+        <div class ="cell" id ="1" data-cell>
+            <div class ="leftline" id = "1a"></div>
+            <div class ='dot'></div>
+            <div class ="topline" id ="1b"></div>
+            <div class ='dot'></div>
+
+        </div>
+        <div class ="cell" id ="2" data-cell>
+            <div class ="leftline" id = "2a"></div>
+            <div class ="topline" id ="2b"></div>
+            <div class ='dot'></div>
+        </div>
+        <div class ="cell" id ="3" data-cell>
+            <div class ="leftline" id = "3a"></div>
+            <div class ="topline" id ="3b"></div>
+            <div class ='dot'></div>
+        </div>
+        <div class ="cellforbidden" id ="4" data-cell>
+            <div class ="leftline" id = "4a"></div>
+        </div>
+        <div class ="cell" id ="5" data-cell>
+            <div class ="leftline" id = "5a"></div>
+            <div class ='dot'></div>
+            <div class ="topline" id ="5b"></div>
+            <div class ='dot'></div>
+        </div>
+        <div class ="cell" id ="6"data-cell>
+            <div class ="leftline" id = "6a"></div>
+            <div class ="topline" id ="6b"></div>
+            <div class ='dot'></div>
+        </div>
+        <div class ="cell" id ="7"data-cell>
+            <div class ="leftline" id = "7a"></div>
+            <div class ="topline" id ="7b"></div>
+            <div class ='dot'></div>
+        </div>
+        <div class ="cellforbidden" id ="8"data-cell>
+            <div class ="leftline" id = "8a"></div>
+        </div>
+        <div class ="cell" id ="9" data-cell>
+            <div class ="leftline" id = "9a"></div>
+            <div class ='dot'></div>
+            <div class ="topline" id ="9b"></div>
+            <div class ='dot'></div>
+        </div>
+        <div class ="cell" id ="10" data-cell>
+            <div class ="leftline" id = "10a"></div>
+            <div class ="topline" id ="10b"></div>
+            <div class ='dot'></div>
+        </div>
+        <div class ="cell" id ="11" data-cell>
+            <div class ="leftline" id = "11a"></div>
+            <div class ="topline" id ="11b"></div>
+            <div class ='dot'></div>
+        </div>
+        <div class ="cellforbidden" id ="12" data-cell>
+            <div class ="leftline" id = "12a"></div>
+        </div>
+        <div class ="cellforbidden" id ="13" data-cell>
+            <div class ='dot'></div>
+            <div class ="topline" id ="13b"></div>
+            <div class ='dot'></div>
+        </div>
+        <div class ="cellforbidden" id ="14" data-cell>
+
+            <div class ="topline" id ="14b"></div>
+            <div class ='dot'></div>
+        </div>
+        <div class ="cellforbidden" id ="15" data-cell>
+
+            <div class ="topline" id ="15b"></div>
+            <div class ='dot'></div>
+        </div>
+    </div>
+        <div class ="restart-message" >
+<!--            Copied the window.location.reload() from - https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click-->
+            <button id ="restartButton" onclick="window.location.reload()">RESTART</button>
+
+        </div>
+        <div class ="homeDiv">
+            <a href="index.html">
+                <button class ="home">HOME</button>
+            </a>
+        </div>
+        <div class ="game-won" id="gameWon">
+            <div id ='winningMessage'></div>
+        </div>
+
+
+    </body>
+    <script src="dotsAndBoxes.js"></script>
+</html>
